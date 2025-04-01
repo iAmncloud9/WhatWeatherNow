@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Weather</title>
+    <link href="weatherapp.css" rel="stylesheet">
+    <link href="images/globe.png" rel="icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot" style="color: lightcoral; font-size: 1.4rem;"></i>
+            <input id="search-input" type="text" placeholder="Enter the city/country..." required>
+            <button id="search-button"><i class="fa-solid fa-magnifying-glass"
+                    style="color: brown; font-size: 1.4rem;"></i></button>
+        </div>
+        <div class="not-found">
+            <img src="">
+            <p>Oops! Location is not valid</p>
+        </div>
+
+        <div class="weather-box">
+            <img>
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-information">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="detail-text">
+                    <span id="humidity-infor"></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="detail-text">
+                    <span id="wind-infor"></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="weatherapp.js"></script>
+
+</html>
